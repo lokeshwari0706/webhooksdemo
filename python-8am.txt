@@ -1,0 +1,1451 @@
+it companies
+------------
+1.product based
+google,amazon,microsoft
+2.service based
+cts,wipro,accenture.
+-----------------------------------------------------------------------------------------
+application
+------------
+1.STANDALONE
+NOTEPAD,PAINT
+AN APPLICATION WHICH RUNS IN OFFLINE
+LOCAL STORAGE
+INSTALLATION IS REQUIRED
+
+
+2.WEB BASED
+FLIPKART.COM,AMAZON.COM
+AN APPLICATION WHICH RUNS IN ONLINE
+DATABASE IS USED
+INSTALLATION IS NOT REQUIRED
+
+3.MOBILE BASED/HYBRID/CLIENT-SERVER
+GMAIL
+ONLINE--> DB,OFFLINE--->LOCAL STORAGE
+-----------------------------------------------------------------------------------------
+JAVA  --> JAVA C BYTE CODE --->JVM(INTERPRETER) MACHINE CODE
+
+python--->server side scripting language
+it is general purpose,dynamic,highlevel,interpreted programming language and support oops.
+-----------------------------------------------------------------------------------------
+VARIABLES
+==========
+it is also an identifier.
+it is a container box to store a value.
+variable data's can be changed.
+print("hello wolrd")
+print("hello wolrd")
+print("hello wolrd")
+print("hello wolrd")
+print("hello wolrd")
+
+msg="hello world"
+print(msg)
+msg="good morning"
+print(msg)
+
+msg =10;
+print(msg)
+
+int x=10;
+x="loki";
+-----------------------------------------------------------------------------------------
+TOKENS 
+-------
+IT IS A SMALLEST INDIVIDUAL UNIT IN A PROGRAM
+1.KEYWORDS
+2.IDENTIFIERS
+3.LITERALS
+4.OPERATORS
+5.ESCAPE SEQUENCE
+6.COMMENTS
+-----------------------------------------------------------------------------------------1.KEYWORDS
+===========
+*these are reserved words in python
+*these are special words that they have a specific meaning and purpose.
+*it cannot be used for any other purpose
+*keywords are case sensitive(lowercase)
+TASK
+----
+HOW MANY KEYWORDS ARE IN PYTHON.
+-----------------------------------------------------------------------------------------
+2.IDENTIFIERS
+==============
+*identifiers are the names given by the programmer.
+*identifier is used to identify the specific element
+*variable name,function name,class name
+RULES
+------
+1.FIRST CHARECTER OF IDENTIFIER NAME MUST BE AN ALPHABET (A TO Z,a to z)or a underscore(-)
+2.FIRST CHARECTE SHOULD NOT BE A DIGIT
+3.ALL THE CHARECTERS EXCEPT THE FIRST CHARECTER OR A IDENTIFIER NAME MAY BE A ALPHABET OR UNDERSCORE OR DIGIT.
+4.IDENTIFIER NAME MUST NOT CONTAIN ANY WHITE SPACE() OR SPECIAL SYMBOLS
+5.IDENTIFIER NAME MUST NOT BE A KEYWORD
+6.IDENTIFIERS ARE CASE SENSITIVE.
+-----------------------------------------------------------------------------------------
+1name="loki"
+_na_me="loki"
+n%4="loki"
+name1="loki"
+firt name ="loki"
+-----------------------------------------------------------------------------------------
+CASES
+=====
+1.SNAKE CASE --->my_first_name-->python
+2.CAMAL CASE --->myFirstName---->javascript
+3.PASCAL CASE -->MyFirstName---->pascal,colbol
+4.KEBAB-CASE --->my-first-name-->css
+variable name----->snakecase
+function name----->camel case
+class name-------->pascal case
+
+python is dynamically typed language
+    ----------------------------------------------------------------------------------------
+3.LITERALS
+==========
+kind of data stored in a variable.
+
+String 
+zero or more charecters enclosed inside a single quote or double quote
+
+numbers
+int,float,complex
+
+boolean
+True False 
+
+special literals
+None
+
+Collection
+List,Tuple,set,Dictionary
+
+-----------------------------------------------------------------------------------------
+4.Operators
+============
+are used in an expression to perform some operations on variable.
+
+a=10
+b=20
+a+b+c
+operands
+------------
+are the variables used in expression on which operators perfrom opertaion
+c=a+b  #expression
+a,b--->operands
++ ---->operator
+-----------------------------------------------------------------------------------------
+5.ESCAPE SEQUENCE
+==================
+
+\n -->new line
+\\ -->single slash
+\t -->horizontal tab
+\v -->vertical tab
+
+----------------------------------------------------------------------------------------
+6.COMMENTS
+==========
+Human to human communication
+intrepretor will ignore this comments
+single line comments #
+vertical line comments '''  '''
+----------------------------------------------------------------------------------------
+DATATYPES
+---------
+type of data or value that we store it in a variable.
+
+15 datatypes  
+1.text-->String --->str--->"hi78" 'heello'
+2.numbers--->int(5679),float(12.34),complex(3+5j)
+3.boolean--->bool-->True/False
+4.Nonetype--->None
+5.sequence--->List,Tuple,range
+6.settype---->set,frozenset
+7.mapping---->dictionary
+8.binary----->bytes,binary,memory view.
+----------------------------------------------------------------------------------------
+type()--->inbuilt function---->to find the datatype of a variable.
+print()-->inbuilt function---->to print 
+a=5
+print(a)
+print(type(a))
+b=float(a)
+print(b)
+print(type(b))
+------------------------
+a=None
+print(a)
+print(type(a))
+print('-'*40)
+b=str(a)
+print(b)
+print(type(b))
+-----------------------------------------------------------------------------------------
+types of operators
+==================
+1.arithmetic
+-------------
++---->addition
+- --->subtraction
+* --->multiplication
+/---->float division
+//--->integer division
+%---->modulo
+**--->exponentiation
+11.3333 ------>11  ---->11
+11.89 -------->12   ---->11
+
+string concatenation
+---------------------
+a="20"
+b="25"
+print(a*b)
+----------------------------------------------------------------------------------------
+string repetition
+------------------
+a="hello"
+b=3
+print(a*b)
+-----------------------------------------------------------------------------------------
+2.comparison/relational
+it going to return either true or false.
+<
+>
+<=
+>=
+==
+!=
+----------------------------------------------------------------------------------------
+3.assignment
+a=5;
+short hand operators
+--------------------
+a=a+b
+a+=b
++=
+-=
+/=
+%=
+//=
+**=
+---------------------------------------------------------------------
+
+#swapping of two variables.
+---------------------------
+a=5
+b=10
+a=a+b
+b=a-b
+a=a-b
+print(a)
+print(b)
+TASK
+-----
+swapping of two variables using multiplicationn and divison.
+-------------------------------------------------------------------------
+4.logical
+----------
+1.AND
+  t t  t
+  t f  f
+  f t  f
+  f f  f
+
+2.OR
+  t t  t
+  t f  t
+  f t  t
+  f f  f
+3.NOT
+ t  f
+ f  t
+-----------------------------------------------------------------------------------------
+5.bitwise
+&  AND
+|  OR
+^  XOR
+~  NOT
+<< LEFT SHIFT
+>> RIGHT SHIFT
+
+        8 4 2 1
+10----> 1 0 1 0
+5-----> 0 1 0 1    (and)
+       ---------
+        0 0 0 0------>0
+
+7----->0 1 1 1
+3----->0 0 1 1    (or)
+   ---------------3
+       0 1 1 1 ------->7
+    ---------------
+
+4 --->0 1 0 0
+                 (xor)
+3 --->0 0 1 1
+     ----------
+      0 1 1 1  ------>7
+------------------
+not operator
+-(n+1)
+------------------------------------
+left shift
+<<
+4-->0 1 0 0
+ -->1 0 0 0   
+        32 168 4 2 1
+7--->0 0 0 0 0 1 1 1
+ --->0 0 0 1 1 1 0 0
+
+6--->0 0 0 0 0 1 1 0
+ --->0 0 0 0 1 1 0 0
+------------------------------
+Right shift
+>>
+        32 168 4 2 1
+7--->0 0 0 0 0 1 1 1
+ --->  0 0 0 0 0 1 1
+ --->    0 0 0 0 0 1
+BASED ON NUMBER OF OPERANDS
+---------------------------
+1.unary opeator---> takes only one operand-->not
+2.binary operator-> takes two operand---> and  or  << >> 
+3.ternary operator-> takess more than two operand  
+-------------------------------------------------------------------------------------
+
+6.membership
+in     --> returun true .if the specified value is present in sequence 
+not in --> returun true .if the specified value is not present in sequence 
+----------------------------------------------------------------------------------------
+7.identity
+is     --> return true if the operand refers to the same object
+is not --> returns true if the operands do not refer the same object
+id()
+----
+to find the memory location
+----------------------------------------------------------------------------------------
+
+8.other special operators
+.(dot)--> class
+:(colon)->slicing operator
+-----------------------------------------------------------------------------------------
+String
+--------
+
+a  p  p  l  e
+0  1  2  3  4
+-5 -4  -3 -2 -1           
+
+x=h e l l o
+  0 1 2 3 4
+print(x[2])
+
+a="hello world"
+lenn=len(a)-1
+print(a[lenn])
+
+
+slicing
+=======
+[start:stop:step]
+start:is to be included
+stop: is not included
+step: inc,dec(optional)(deault value 1)
+
+a="LAKSHMAN"
+L  A   K  S  H  M  A  N
+0  1   2  3  4  5  6  7
+
+
+a[0]--->L
+a[2]--->k
+a[0:5:1]
+lkh
+a[1:7:2]
+asm
+a[2:7]
+kshma
+a[1:]
+AKSHMAN
+a[:6]
+a[::]
+a[5:2:1]
+a[1:5:-1]
+a[-2:-5:-1]
+-------------------------------------------------------------------------------------
+#reverse a string
+a="LAKSHMAN"
+print(len(a))
+print(a[::-1])
+
+binary-->0/1
+decimal-->1-10
+hexa decimal(16)-->1-->9-->a ,b, c,d,e ,f,
+--------------------------------------------------------------------------------------
+print()
+input()
+
+
+
+user input
+==========
+input("enter you name:")
+
+task
+----
+subtraction of two num from user input.
+rint("welcome to my calc app")
+
+x=float(input("enter a num1: "))
+y=float(input("enter a num2: "))
+
+
+print("--*"*30)
+sum=x+y
+print(sum)
+
+
+msg="10 20 30"
+messsage=msg.split()
+print(messsage)
+msg1="10*20*30"
+message=msg.split(sep="*")
+print(message)
+msg2="10,20,30"
+message3=msg2.split(sep=" ")
+print(message3)
+
+
+print("hello",end="*_")
+print("world",end="*- ")
+print("welcome")
+
+name="lokeshwari"
+print("welcome "+name)
+
+
+
+name="riyaz"
+age=10
+
+
+
+print("welcome",name,"your age is",age)
+print("welcome ",name+". your age is",age)
+print(f"welcome {name}.your age is {age}")
+
+=======================================================================================
+control statments
+==================
+to control the flow of code
+
+1.conditional statments
+------------------------
+to run or skip a block of code based on some condition
+
+:(colon) ---> to define a block of code
+
+a.simple if
+------------
+syntax
+======
+if(condition):
+   #true--> set of statement
+ex
+--
+age = 10
+if age > 18:
+    print("eligible to vote")
+    print("evote")
+----------------------------------------------------------------------------------------
+b.if-else
+----------
+syntax
+=======
+if(codition):
+    #set of stmt--> true
+else:
+    #set of stmt--> false
+ex
+--
+age = 10
+if age > 18:
+    print("eligible to vote")
+    print("evote")
+
+else:
+    print("not eligible to vote")
+               
+----------------------------------------------------------------------------------------
+c.nested if-else
+-----------------
+syntax
+------
+if(condition):
+   if(condition):
+       set of code-->true
+   else
+       set of code--> false
+
+else:
+    set of code
+
+ex
+--
+age = 10
+if age > 18:
+    if age >= 50:
+        print("old")
+    else:
+       print("allowed")
+
+else:
+    print("young")
+--------------------------
+#
+# if age > 18:
+#     if age < 50:
+#         print("allowed")
+#     else:
+#        print("old")
+#
+# else:
+#     print("young")
+
+---------------------------------
+age=20
+if 18 < age and age < 50:
+    print("allowed")
+else:
+    print("not")
+#try simplified chain version
+-----------------------------------------------------------------------------------------
+d.if-elif-else ladder
+--------------------
+syntax
+-------
+if(condition):
+   #set of code--> true
+elif(condition2):
+   #set of code--> true
+elif(condition3):
+   #set ofcode--> true
+else:
+   #block of code--> false
+
+
+
+ex
+--
+num=0
+
+if num>0:
+    print("positive")
+elif num<0:
+    print("negative")
+else:
+    print("equal to zero")
+
+-----------------------------------------------------------------------------------------
+Task
+1.write a program to find the season for the given month number
+If the given month is either November or December or January, print Winter
+If the given months either February or March, print Spring.
+If the given month is either April or May or June print Summer
+If the given month is either July or August, print Rainy
+If the given month is either September or October, print Autumn
+
+2.write a program to find the shapes  based on the given number of sides
+the given number of sides is 3, print Triangle
+If the given number of sides is 4, print Quadrilateral
+If the given number of sides is 5, print Pentagon
+If the given number of sides is 6, print Hexagon
+If the given number of sides is greater than 6, print Polygon
+
+-----------------------------------------------------------------------------------------
+IN PYTHON TERNARY OPERATOR
+age=10
+result="can vote" if age>18 else "cannot vote"
+print(result)
+
+
+java--->switch
+python->match-case
+--------------------
+
+syntax
+------
+match variable:
+    case condtion1:
+     #block
+    case condtion2:
+     #block
+    case default:
+     #block
+
+ex:
+--
+day=int(input("enter a day num"))
+match day:
+    case 1:
+        print("sunday")
+    case 2:
+        print("monday")
+    case 3:
+        print("tuesday")
+    case 4:
+        print("wednesday")
+    case 5:
+        print("thur")
+    case 6:
+        print("fri")
+    case 7:
+        print("sat")
+    case default:
+        print("invalid input")
+
+
+-----------------------------------------------------------------------------------------
+
+
+=========================================================================================LOOPS
+-----
+
+to repeat a block of code until a condition satisfies
+1.while loop
+2.for loop 
+
+
+3 statments
+------------
+variable declaration
+condition
+variable updation:a=a+2,a+=2
+
+-----------------------------------------------------------------------------------------------------
+1.while loop
+--------------
+syntax
+------
+variable declaration
+      while condition:
+            block of code
+            variable updation
+program to print  number from 0 to 5
+a=0
+while a>=5:
+      print(a)
+      a=a+1
+print("end")
+------------------------------------------------------------------------------------------------------
+#even num
+a=0
+while a<=100:
+      print(a)
+      a=a+2
+print("end")
+
+#odd num
+a=1
+while a<=100:
+      print(a)
+      a=a+2
+print("end")
+
+#print num from 5 to 1
+a=5
+while a>=0:
+      print(a)
+      a=a-1
+print("end")
+
+#time complexity
+import time
+
+start=time.time()
+a=0
+while a<=100:
+      print(a)
+      a=a+2
+
+print("end")
+end=time.time()
+print(end-start)
+---------------------
+#there is anoption in python that we can give else statment after while.
+
+a=0
+while a<0:
+      print(a)
+      a=a+2
+else:
+      print("end")
+
+----------------------------------------------------------------------------------------
+FOR LOOP
+--------
+ITERATING OVER COLLECTION
+
+SYNTAX
+-------
+for variable in collection:
+    #block of code
+---------------------------------------------------------------
+name='lokeshwari'
+for ler in name:
+      print(ler,end=" ")
+
+name=['raj','riyaz','siva','suresh']
+for x in name:
+      print(x)
+------------------------------------------------------------------------
+b.using range() function
+
+range(start,stop,step)
+stop-->is a required parameter
+
+start--> is optional(default value is 0)
+step---> is optional(default value is 1)
+
+name="lokeshwari"
+for i in range(0,8,1):
+      print(name[i])
+-----------------------------------------------------------------------------------------
+#reverse a string.
+# get one input from user and check whether it is prime or not.
+# run a loop from 1 to 100 (1 and 100 included)
+  if num is divisbly by 3 then print fizz
+  if num is divisbly by 5 then print Buzz
+  if num is divisbly by 15 then print fizzbuzz
+  if neither of above print the num
+-----------------------------------------------------------------------------------------
+num = int(input("enter a  num"))
+if num>1:
+    for i in range(2,num):
+        if(num%i==0):
+            print("it is not a prime")
+            break;
+    else:
+        print("prime")
+else:
+    print("not a prime")
+----------------------------------------------------------------------------------------
+num = int(input("enter a  num"))
+count=0
+for i in range(1,num+1):
+    if(num%i==0):
+        count+=1      
+if(count==2):
+    print("it is a prime")
+else:
+    print(" it is not a prime")
+
+-----------------------------------------------------------------------------------------
+leap year
+-----------
+2100-->not a leap year
+1500--> not a leap year
+year%4==0
+year%100!=0
+year%400==0
+every 100th year is not necessarily leap year
+but every 400th must be a leap year.
+1 year=365.25
+.25*4=1
+----------------------------------------------------------------------------------------------------------------------------------------------
+String methods
+--------------------
+Strings are immutable data type.
+name=loki
+name="lakshman"
+name=name.replace('a','b')
+print(name)
+
+name1="/abc123"
+name10=name1.index('3')
+print(name10)
+
+name11=name1.endswith("3")
+print(name11)
+name1=name1.split()
+print(name1)
+
+name2=name1.split(maxsplit=2)
+print(name2)
+name3=name1.count('o')
+print(name3)
+name4=name1.title()
+print(name4)
+name5=name1.capitalize()
+print(name5)
+name6=name1.swapcase()
+print(name6)
+name7=name1.isupper()
+print(name7)
+name7=name1.islower()
+print(name7)
+name8=name1.isalnum()
+print(name8)
+char=65
+print(type(char))
+print(chr(char))
+print(ord('A'))
+==============================================================================================
+Brand pitt
+jenifer aniston
+
+true
+================
+strin methods--> w3 schools
+=============================================================================================
+* * * * *
+* * * * *
+* * * * * 
+* * * * * 
+* * * * *
+================================================================================================
+String methods are used to modify a string  but it does not change the original string
+string methods always returns a new string.
+================================================================================================================
+collections or data structure or iterables
+====================================
+collctions or data structure refer to ways of organisinng and storing the data so that they can be accessed and modified efficiently.
+1.String
+2.list
+3.tuple
+4.set
+5.dictionaries
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+Strings
+----------
+it is a collection 0f one or more charecter enclosed in a single ,double or triple quotes
+a.acessing
+---------------
+index based,slicing operator.
+b.modifying
+---------------
+it is not possible in string
+c.adding
+------------
+possible using '+' operator--> string concatenation
+repetition is done using (*) opeator
+d.removing.
+----------------
+it is possible using the slicing operator and index operator
+del keyword is used to remove the entire string
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+2.list
+=====
+hetrogeneous data structure---> we can store different data type
+list []---> mutable
+a.accessig
+----------
+index based,slicing operator
+b.modifying
+------------------
+index based
+possible using '+' operator--> string concatenation
+repetition is done using (*) opeator
+c.adding
+------------
+append(item):
+it will add only one item  at a time.and always add item at an end
+insert(index,item)
+it will add only one item at given index
+extends([multiple item])
+it will add multiple elements at once but always at the end.
+
+d.removing
+----------------
+pop(index)
+if index is specified ,element at the index will be removed
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+TUPLE---> ordered,immutable
+=====
+heterogenous data structure
+tuple()---> to convert a datatype to tuple
+
+a=list(range(1,11))
+print(a)
+a=tuple(range(1,11))
+print(a)
+
+we can also create an empty tuple using tuple()
+b=tuple()
+print(b)
+
+a.Accessing
+------------------
+index,slicing operator
+a=(1,"loki",23.34,3+4j)
+print(a[0:2])
+
+
+b.Modifying
+-----------------
+individual item cannot be modified in tuple
+entire tuple can be changed
+
+d=(87)
+print(type(d))
+
+concatenation--> +
+a=(1,"loki",23.34,3+4j)
+b=(25,78,89)
+c=a+b
+print(c)
+
+repetition--->*
+a=(1,2,3)
+print(a*3)
+
+
+ADDING
+=======
+adding can be done by + operator and slicing operator 
+a=(1,2,3,4,5,6,7)
+a=a[:2]+(11,12)+a[2:]
+print(a)
+
+DELETION
+=========
+deletion of tuple is done by del keyword and it only deletes the entire tuple from the memory.
+
+******************TASK******************
+LIST OUT THE DIFFERENCE BETWEEN LIST AND TUPLE
+1.list--> mutable     tuple---> immutable
+tuples are faster than list
+tuples are fixed memory length 
+list are variable memeory length
+===============================================================================================================
+a=set()
+print(a)
+a=tuple()
+print(a)
+a=list()
+print(a)
+a=dict()
+print(a)
+====================================
+sets-->{}--> unordered,immutable
+heterogeneous data structure
+it doesnot allow duplicate
+it does not preserve insertion order
+
+a=set(range(1,11))
+print(a)
+
+---------------------------------------------------------------------
+Remove the duplicates from the list
+a=[11,13,14,13,12,15]
+print(list(set(a)))
+
+or
+
+a=[11,13,14,13,12,15]
+new=[]
+for item in a:
+    if item in new:
+        pass
+    else:
+        new.append(item)
+
+print(new)
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Acessing
+-----------
+it is not possible
+unprdered ddata structure
+modifying 
+---------------
+is also not possible--> immutable
+concatenation
+-------------------
+it is not possible
+
+Repetition
+----------------
+is not possible
+
+Adding
+----------
+1.add(item)
+a={1,2,3,4,5,6,7,8,9,10}
+a.add(0)
+print(a)
+
+2.update(collection)
+multiple elements can be added
+a={1,2,3,4,5,6,7,8,9,10}
+a.update([12,13,14])
+print(a)
+
+Deleting
+------------
+1.pop()
+it will remove elements randomly
+a={"orange","apple"}
+a.pop()
+print(a)
+
+2.discard(item)
+if the item is not present it will not raise an error
+
+3.remove(item)
+if the item is note present it will raise error
+
+3.clear()
+a={"orange","apple"}
+a.clear()
+print(a)
+
+o/p
+set()
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+set operations
+================
+union()   |
+intersection()     &
+difference()           -
+symmetric_differencce()            ^
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Dictionary
+--------------
+hetrogenous data structure
+key: value(pair data structure)
+keys cannot be duplicated
+value can be duplicated
+
+dict() we can crete empty dictionary using dict()
+
+student={
+    "name":"Raj",
+    "age":18,
+    "grade": "A",
+    "ispass":True
+
+}
+
+
+Accessing
+-------------
+it cannot be done by indexing
+it is done by keys
+
+print(student["marks"])
+
+it willl show an error
+inorder to avoid this error
+print(student.get("marks",0))
+
+get(key,default_value)
+
+Modifying
+--------------
+is done by keys
+student={
+    "name":"Raj",
+    "age":18,
+    "grade": "A",
+    "ispass":True
+
+}
+student["grade"]="B"
+print(student)
+
+Repetition and concatenation is not possible in dictionary
+
+Adding a key
+similar to modifying
+
+Deleting a key
+pop(key)
+it will remove key and value
+popitem()
+remove the last item key and value
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+fruits=["orage","apple","banana"]
+for key,value in enumerate(fruits):
+    print(key,"-",value)
+
+expression="10/(2*4)"
+c=eval(expression)
+print(c)
+
+dir()--> to find out the methods available in modules
+for i in dir(list):
+    print(i)
+==============================================================================================================
+Module
+simple python file that can be reused
+inbuilt modules----> math,os,random,sys
+to use a module in your file---> import module_name
+import math
+p=(100,40)
+q=(40,10)
+print(math.dist((100,40),(70,20)))
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+ num=5
+result=1
+for i in range(num,0,-1):
+	result=result*i
+print(result)
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+function
+=======
+organisable block of reusable code
+def---> keyword to define a function.()
+types
+=====
+1.user-defined fun
+===============
+function definition syntax:
+======================
+def function_name(parameter s1,parameters s2..):
+function calling syntax
+==================
+function_name(arg1,arg2....)
+parameters:values that we pass in function definition
+arguments:values that we pass in function calling.
+Rules:
+=====
+1.function definition should be before the function calling
+2.only one return statment should be in a function.
+3.no code after the return statment will be executed.
+
+based on the return types and parameters function classifies as 4 types:
+-----------------------------------------------------------------------------------------------------
+1.without return type and without parameters
+def show():
+	print("hello world")
+show()
+
+2.without return type and with parameters
+def multi(a,b):
+	print (a*b)
+multi(10,20)
+
+3.with return type and without parameters
+def greet():
+	return "hello"
+print(greet())
+
+4.with return type and with parameters
+def greet(name):
+	return f'hello {name}'
+print(greet("loki"))
+
+Arguments types:
+==============
+1.positional arguments:Arguments will take the positions in the passed order
+def greet(name,age):
+	print("hello",name)
+	print("your age is",age)
+greet(10, "loki")
+
+2.keyword arguments
+def greet(name,age):
+	print("hello",name)
+	print("your age is",age)
+greet(age=10,name= "loki")
+
+3.Default arguments
+a default will be given to the parameter in function definition.
+Note:default argument should always be specified in the last
+def add(a,b,c=0):
+	print(a+b+c)
+add(10,20)
+4.Variable-length Arguments:
+def add(**kwargs):
+	print(kwargs)
+	print(type(kwargs))
+add(a=1,b=3,c=5,d=7,e=9)
+======
+========================================================================================================
+def add(*args):
+	sum=0
+	for i in args:
+		sum=sum+i
+	print(sum)
+add(2,4,6,7,8,9)
+=========================================================================================================
+2.built-in func
+print(),input(),type(),count(),len(),str(),int(),float(),list(),sum(),max(),min(),bin(),hex(),oct(),
+3.lambda fun
+anonymous funtion /single  line function
+*lambda funtion can take any number of parameters but atleast 1
+*lambda function can have only one expression.
+syntax
+------
+variable_name=lambda(param1,param2.......) : expression
+
+ans=lambda num1,num2 : num1+num2
+print(ans(5,6))
+
+
+
+def addFive(num):
+    return num+5
+ans=addFive(6)
+print(ans)
+
+--------------------
+
+
+num=[1,2,3,4]
+
+def square(num_list):
+
+    square_list=[]
+    for item in num_list:
+        square_list.append(item**2)
+    return square_list
+print(square(num))
+
+-
+
+num=[1,2,3,4]
+
+def square(num_list):
+
+    square_list=list(map(lambda item:item **2,num_list))
+    return square_list
+ 
+print(square(num))
+----------------------------------
+higher order function
+=================
+function which take another function as a parameter
+map(function,iterable),filter
+
+num=[1,2,3,4,5]
+print(list(map(lambda num1:num1**2,num)))
+
+# num=[1,2,3,4]
+# square=lambda num:num**2
+# print(list(map(square,num)))
+
+
+# def square(num1):
+#     return num1**2
+# print(list(map(square,num)))
+
+---------------------------------------------
+
+num=[1,2,3,4,5]
+result=filter(lambda num1:num1%2==0,num)
+print(list(result))
+
+----------------------------------------
+
+4.recursive function
+===============
+function that call itself again andd againn until a base condition satisfies.
+5!=5*4*3*2*1=120
+5!=5*4!
+          =5*4*3!
+def fact(n):
+    if n==0:
+        return 1
+    return n*fact(n-1)
+print(fact(5))
+-------------------------------
+
+sum of each digit in num
+num=5432
+sum=0
+while num>0:
+    rem=num%10
+    sum=sum+rem
+    num=num//10
+print (sum)
+-------------------------------------------------------------------------------
+
+1.pallidromee
+2.sum of each digit  in num by using recursive fun
+---------------------------------------------------
+AaA--> AaA
+Aba--> abA
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+scope of variable
+------------------------
+local
+global
+
+-----------
+a=5
+def addFive():
+    print("inside fun", a)
+    return a+5
+b=addFive()
+print(b)
+print(a)
+-----------------------------------
+gloals() & locals()
+a=10
+def add(a,b):
+    print(locals())
+    return a+b
+sum = add(3,5)
+print(sum)
+print(globals())
+-----------------------------------------
+global--> keyword
+a=1
+b=3
+def demo():
+    global b
+    b=b+1
+    print(b)
+demo()
+print(b)
+
+
+------------------------------------------------------------
+pattern
+*
+**
+***
+****
+*****
+
+1
+12
+123
+1234
+12345
+
+rows =5
+NUM=1
+for i in range(1,rows+1):
+    for j in range(1,i+1):
+        print(NUM,end ="")
+        NUM+=1
+    print()
+
+
+
+
+
+1
+23
+456
+78910
+
+
+-3
+-2
+-1
+0
+1
+2
+3
+
+
+*****
+****
+***
+**
+*
+
+rows=5
+for i in range(5,0,-1):
+    print("*"*i)
+        *
+      ***
+    *****
+  *******
+*********
+rows=5
+for i in range(1,rows+1):
+    print(" "*(rows-i)+"*"*(2*i-1))
+------------------------------------------------------
+task:
+diamond pattern
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+modules,packages,libraries
+
+modules----> single python file containing variables,functions,classes that can be reused.
+inbuilt modules--->math,os,random,requests,statistics,datestime,JSON,REG EX
+TO USE A MODULE IN YOUR FILE --> IMPORT MODULE_NAME
+dir()--->to find the methods available in a module.
+
+import math
+print(math.factorial(10))
+
+#from math import *
+from math import sqrt
+print(sqrt(8))
+
+import datetime
+print(datetime.datetime.now())
+print(dir(datetime))
+
+task
+-----
+import random
+game=["stone","paper","scissor"]
+print(random.choice(game))
+
+
+import random
+print(random.randint(1,10))
+
+
+import statistics
+
+print(dir(statistics))
+x=[1,2,3,4,5]
+print(statistics.mean(x))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
